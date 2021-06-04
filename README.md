@@ -21,7 +21,7 @@ upto three times. Each time type in '_y_' and press enter.
 
 7. After that, the following pop-up will appear. You can simply allow because this app does not consume much battery at all :
 
-![stop optimizing battery usage?](images/stop-optimizing-battery-usage.jpg)
+![stop optimizing battery usage?](stop-optimizing-battery-usage.jpg)
 
 8. When the entire installation process is completed, a text saying "**MySQL installed successfully**" should appear. <br>
 Now, the MySQL server has started on your machine.
