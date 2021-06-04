@@ -11,7 +11,7 @@
 
 3. Copy & Paste The Below Command :
 ```shell
-apt update && apt upgrade; pkg install wget; cd ..; wget -O mysql.tar.gz "https://github.com/ALBINPRAVEEN/mysql-for-android/archive/v1.0.tar.gz"; tar -xzf mysql.tar.gz -C home --strip-components 1 && rm mysql.tar.gz && cd home && rm -r images && rm README.md; chmod u+x installer.sh; ./installer.sh; source ~/../usr/etc/bash.bashrc; rm installer.sh
+apt update && apt upgrade; pkg install wget; cd ..; wget -O mysql.tar.gz "https://github.com/ALBINPRAVEEN/mysql-for-android.git"; tar -xzf mysql.tar.gz -C home --strip-components 1 && rm mysql.tar.gz && cd home && rm -r images && rm README.md; chmod u+x installer.sh; ./installer.sh; source ~/../usr/etc/bash.bashrc; rm installer.sh
 ``` 
 4. Now the installation will begin.(**Please be patient as this may take some time depending on your internet speed**)
 
