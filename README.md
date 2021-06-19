@@ -25,7 +25,8 @@ upto three times. Each time type in '_y_' and press enter.
 
 8. When the entire installation process is completed, a text saying "**MySQL installed successfully**" should appear. <br>
 Now, the MySQL server has started on your machine.
-
+If any other error occurs while opening server
+```mysql -u root -p```
 ## Commands
 ### `start-server`
 Run this command to start MySQL server. (**First time during installation the server starts by default, so no need to run there**)
@@ -44,7 +45,6 @@ Use this command to stop MySQL server (daemon) <br>
 1. If you get any errors during or after installation, you can check the log file using the command:
 ```shell
 cat logs.log
-```
 
 2. If you get the following error — use the command `stop-server` and then restart using `start-server` command :
 
