@@ -36,32 +36,6 @@ then
 	
 
 
-#FOLLOW Instagram
-clear
-tput clear
-tput cup 3 30
-echo -e "\e[44m FOLLOW \e[41m ME ON Instagram\e[m"
-tput cup 6 30
-echo -e "\x1b[42m ALBY\x1b[m"
-tput cup 9 0
-echo -en "\e[93m what is your name : \e[m"
-read answer
-tput cup 12 22
-echo -e "\e[104m hello! Open a New session!! $answer! \e[m"
-tput cup 15 0
-echo -en "\e[93m Have you followed me on Instagram(y/n)? \e[m "
-read answer
-
-if [ "$answer" != "${answer#[Yy]}" ] ;then
-tput cup 17 21
-    echo -e "\e[42m Thankyou for following me on Instagram\e[m"
-else
-        am start -a android.intent.action.VIEW -d https://www.instagram.com/i_am_albin_praveen/ >> /dev/null 2>&1
-tput cup 17 23
-    echo -e "\e[41m Please follow me on Instagram \e[m"
-fi
-tput cup 20 0
-figlet -f slant "ALBY" |lolcat
 	echologs "Installing..."
         pkg install mariadb
 
@@ -101,3 +75,30 @@ echologs "Acquired wakelock" ||
 echologs "Failed to acquire wakelock (code:${?})"
 
 echo "MySQL installed successfully"
+
+#FOLLOW Instagram
+clear
+tput clear
+tput cup 3 30
+echo -e "\e[44m FOLLOW \e[41m ME ON Instagram\e[m"
+tput cup 6 30
+echo -e "\x1b[42m ALBY\x1b[m"
+tput cup 9 0
+echo -en "\e[93m what is your name : \e[m"
+read answer
+tput cup 12 22
+echo -e "\e[104m hello! Open a New session!! $answer! \e[m"
+tput cup 15 0
+echo -en "\e[93m Have you followed me on Instagram(y/n)? \e[m "
+read answer
+
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+tput cup 17 21
+    echo -e "\e[42m Thankyou for following me on Instagram\e[m"
+else
+        am start -a android.intent.action.VIEW -d https://www.instagram.com/i_am_albin_praveen/ >> /dev/null 2>&1
+tput cup 17 23
+    echo -e "\e[41m Please follow me on Instagram \e[m"
+fi
+tput cup 20 0
+figlet -f slant "ALBY" |lolcat
